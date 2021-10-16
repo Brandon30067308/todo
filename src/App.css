@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "pt mono", "Garet", "PT Sans", Arial, Helvetica;
+  font-weight: 600 !important;
+}
+
+body {
+  background-color: #f5f5f5bf;
+  overflow-x: hidden;
+  min-height: 95vh;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .text {
+  color: #2d2d2d;
+  font-size: 17.15px;
+  margin-left: 20px;
+  word-break: break-word;
+}
+
+body button {
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  background-color: unset;
+}
+
+body .options {
+  justify-content: space-between;
+}
+
+body .options > .selected {
+  border: 1px solid #2d2d2d;
+}
+
+body .text-sm {
+  font-size: 16.25px;
+}
+
+body .option {
+  padding: 12px;
+  margin-right: 22px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: rgb(45, 45, 45);
+  border-radius: 0.25rem;
+  letter-spacing: 0.375px;
+}
+
+body .option:hover {
+  border-color: rgb(45, 45, 45);
+  transition: border-color 0.45s ease;
+}
+
+body .sub-container {
+  margin: 0px 15px 0px 0px;
+  width: calc(100% - 25px);
+  justify-content: left;
+  color: #516488;
+}
+
+body input.input-edit {
+  opacity: 1;
+  border: none;
+  outline: none;
+  min-width: calc(100% + 1ch);
+  width: fit-content;
+  padding: 0!important;
+  margin: 0!important;
+}
+
+body .form-edit {
+  min-width: calc((100% - 25px) - 1ch);
+  width: fit-content;
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+}
+
+@keyframes slide-up {
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 600px) {
+  body .text {
+    font-size: 14.5px;
+  }
+  body .text-sm {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 510px) {
+  html body form.form-edit {
+    margin: 0px;
+    padding: 0rem 0rem 0rem 1rem;
+  }
+  body .option {
+    margin-right: 13px;
+    padding: 10px;
+  }
+  .options > .option {
+    padding: 7.5px;
+  }
+  body .text {
+    padding: 0rem 1rem;
+    margin: 0px;
+    font-size: 13.75px;
+  }
+  body .text-sm {
+    font-size: 13.75px;
+  }
+  body .btn img,
+  body .btn svg,
+  body .btn {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  body .add-img {
+    width: 20px;
+    height: 20px;
+  }
+  body .filter > p {
+    margin-right: 6.5px;
+  }
+}
